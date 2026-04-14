@@ -22,6 +22,7 @@ public class StudentsController : ControllerBase
     public async Task<ActionResult<IEnumerable<Student>>> GetAllStudents()
     {
         _logger.LogInformation("Getting all students");
+        Console.WriteLine("Getting all students");
         var students = await _repository.GetAllAsync();
         return Ok(students);
     }
