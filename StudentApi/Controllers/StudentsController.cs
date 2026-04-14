@@ -21,7 +21,7 @@ public class StudentsController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Student>>> GetAllStudents()
     {
-        _logger.LogInformation("Getting all students students");
+        _logger.LogInformation("Getting all students");
         var students = await _repository.GetAllAsync();
         return Ok(students);
     }
