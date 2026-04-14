@@ -113,3 +113,4 @@ C:\Git-Hooks\StudentApi.Tests\obj\Debug\net8.0\refint\StudentApi.Tests.dll
 C:\Git-Hooks\StudentApi.Tests\obj\Debug\net8.0\StudentApi.Tests.pdb
 C:\Git-Hooks\StudentApi.Tests\obj\Debug\net8.0\StudentApi.Tests.genruntimeconfig.cache
 C:\Git-Hooks\StudentApi.Tests\obj\Debug\net8.0\ref\StudentApi.Tests.dll
+C:\Git-Hooks\StudentApi.Tests\obj\Debug\net8.0\StudentApi.Tests.sourcelink.json

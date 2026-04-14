@@ -135,10 +135,10 @@ public class InMemoryStudentRepositoryTests
 
         // Assert
         Assert.True(result);
-        
+
         var student = await repository.GetByIdAsync(1);
         Assert.Null(student);
-        
+
         var allStudents = await repository.GetAllAsync();
         Assert.Single(allStudents);
     }

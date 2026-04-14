@@ -21,7 +21,7 @@ public class StudentsController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Student>>> GetAllStudents()
     {
-        _logger.LogInformation("Getting all students");
+        _logger.LogInformation("Getting all students students");
         var students = await _repository.GetAllAsync();
         return Ok(students);
     }
@@ -32,7 +32,7 @@ public class StudentsController : ControllerBase
     {
         _logger.LogInformation("Getting student with id: {Id}", id);
         var student = await _repository.GetByIdAsync(id);
-        
+
         if (student == null)
         {
             _logger.LogWarning("Student with id {Id} not found", id);
@@ -67,7 +67,7 @@ public class StudentsController : ControllerBase
 
         _logger.LogInformation("Updating student with id: {Id}", id);
         var updatedStudent = await _repository.UpdateAsync(id, student);
-        
+
         if (updatedStudent == null)
         {
             _logger.LogWarning("Student with id {Id} not found for update", id);
@@ -83,7 +83,7 @@ public class StudentsController : ControllerBase
     {
         _logger.LogInformation("Deleting student with id: {Id}", id);
         var result = await _repository.DeleteAsync(id);
-        
+
         if (!result)
         {
             _logger.LogWarning("Student with id {Id} not found for deletion", id);

@@ -34,3 +34,4 @@ C:\Git-Hooks\StudentApi\obj\Debug\net8.0\refint\StudentApi.dll
 C:\Git-Hooks\StudentApi\obj\Debug\net8.0\StudentApi.pdb
 C:\Git-Hooks\StudentApi\obj\Debug\net8.0\StudentApi.genruntimeconfig.cache
 C:\Git-Hooks\StudentApi\obj\Debug\net8.0\ref\StudentApi.dll
+C:\Git-Hooks\StudentApi\obj\Debug\net8.0\StudentApi.sourcelink.json
