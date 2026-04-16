@@ -77,13 +77,14 @@ public class StudentsController : ControllerBase
         return Ok(updatedStudent);
     }
 
+    //TODO: Implement DeleteStudent method
     // DELETE: api/students/5
     [HttpDelete("{id}")]
     public async Task<ActionResult> DeleteStudent(int id)
     {
         _logger.LogInformation("Deleting student with id: {Id}", id);
         var result = await _repository.DeleteAsync(id);
-
+        Console.WriteLine($"Delete result for student with id {id}: {result}");
         if (!result)
         {
             _logger.LogWarning("Student with id {Id} not found for deletion", id);
